@@ -1,0 +1,376 @@
+<?php
+$vets = [
+    [
+        'id' => 1,
+        'name' => 'Dr. Sarah Mitchell',
+        'specialty' => 'Emergency & Critical Care',
+        'experience' => '12 years',
+        'rating' => 4.9,
+        'reviews' => 324,
+        'price' => 45,
+        'availability' => 'Available Now',
+        'status' => 'online',
+        'image' => 'https://via.placeholder.com/150x150/16a34a/ffffff?text=Dr.+Sarah',
+        'languages' => ['English', 'Spanish'],
+        'specialties' => ['Emergency Care', 'Internal Medicine', 'Surgery']
+    ],
+    [
+        'id' => 2,
+        'name' => 'Dr. Michael Chen',
+        'specialty' => 'Feline Internal Medicine',
+        'experience' => '8 years',
+        'rating' => 4.8,
+        'reviews' => 256,
+        'price' => 40,
+        'availability' => 'Available in 5 min',
+        'status' => 'busy',
+        'image' => 'https://via.placeholder.com/150x150/22c55e/ffffff?text=Dr.+Michael',
+        'languages' => ['English', 'Mandarin'],
+        'specialties' => ['Internal Medicine', 'Cardiology', 'Nephrology']
+    ],
+    [
+        'id' => 3,
+        'name' => 'Dr. Emily Rodriguez',
+        'specialty' => 'Feline Behavior & Wellness',
+        'experience' => '10 years',
+        'rating' => 4.9,
+        'reviews' => 412,
+        'price' => 35,
+        'availability' => 'Available Now',
+        'status' => 'online',
+        'image' => 'https://via.placeholder.com/150x150/4ade80/ffffff?text=Dr.+Emily',
+        'languages' => ['English', 'Spanish', 'French'],
+        'specialties' => ['Behavior', 'Nutrition', 'Preventive Care']
+    ],
+    [
+        'id' => 4,
+        'name' => 'Dr. James Wilson',
+        'specialty' => 'Emergency Surgery',
+        'experience' => '15 years',
+        'rating' => 4.7,
+        'reviews' => 189,
+        'price' => 55,
+        'availability' => 'Available in 10 min',
+        'status' => 'busy',
+        'image' => 'https://via.placeholder.com/150x150/86efac/000000?text=Dr.+James',
+        'languages' => ['English'],
+        'specialties' => ['Surgery', 'Orthopedics', 'Emergency Care']
+    ],
+    [
+        'id' => 5,
+        'name' => 'Dr. Lisa Thompson',
+        'specialty' => 'Dermatology & Allergies',
+        'experience' => '9 years',
+        'rating' => 4.8,
+        'reviews' => 298,
+        'price' => 38,
+        'availability' => 'Available Now',
+        'status' => 'online',
+        'image' => 'https://via.placeholder.com/150x150/bbf7d0/000000?text=Dr.+Lisa',
+        'languages' => ['English', 'German'],
+        'specialties' => ['Dermatology', 'Allergies', 'Skin Conditions']
+    ],
+    [
+        'id' => 6,
+        'name' => 'Dr. Robert Kim',
+        'specialty' => 'Senior Cat Care',
+        'experience' => '14 years',
+        'rating' => 4.9,
+        'reviews' => 367,
+        'price' => 42,
+        'availability' => 'Available in 15 min',
+        'status' => 'away',
+        'image' => 'https://via.placeholder.com/150x150/dcfce7/000000?text=Dr.+Robert',
+        'languages' => ['English', 'Korean'],
+        'specialties' => ['Geriatric Care', 'Chronic Conditions', 'Pain Management']
+    ]
+];
+?>
+
+<!-- Emergency Banner -->
+<div class="bg-red-600 text-white py-3">
+    <div class="container mx-auto max-w-7xl px-4 md:px-6">
+        <div class="flex items-center justify-center space-x-2 text-center">
+            <i data-lucide="alert-triangle" class="w-5 h-5 animate-pulse"></i>
+            <span class="font-medium">🚨 Emergency Vet Consultation Available 24/7</span>
+            <i data-lucide="alert-triangle" class="w-5 h-5 animate-pulse"></i>
+        </div>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<section class="w-full py-12 md:py-16 bg-gradient-to-r from-red-100 via-orange-50 to-red-100">
+    <div class="container px-4 md:px-6 mx-auto max-w-7xl">
+        <div class="text-center space-y-4">
+            <div class="inline-flex items-center rounded-full border px-3 py-1 text-sm font-semibold bg-red-100 text-red-800 border-red-200">
+                🩺 Licensed Veterinarians
+            </div>
+            <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">
+                Urgent Vet Consultation
+            </h1>
+            <p class="max-w-[800px] mx-auto text-gray-700 md:text-xl">
+                Connect with licensed veterinarians instantly. Get professional medical advice for your cat's health concerns from the comfort of your home.
+            </p>
+            
+            <!-- Trust Indicators -->
+            <div class="flex flex-wrap justify-center gap-6 py-6">
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                    <i data-lucide="shield-check" class="w-5 h-5 text-green-600"></i>
+                    <span>Licensed Professionals</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                    <i data-lucide="clock" class="w-5 h-5 text-blue-600"></i>
+                    <span>Available 24/7</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                    <i data-lucide="lock" class="w-5 h-5 text-purple-600"></i>
+                    <span>Secure & Private</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                    <i data-lucide="credit-card" class="w-5 h-5 text-orange-600"></i>
+                    <span>One-Time Payment</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section class="w-full py-12 bg-white">
+    <div class="container px-4 md:px-6 mx-auto max-w-7xl">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">How It Works</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Get veterinary consultation in just 3 simple steps</p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-2xl font-bold text-red-600">1</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Choose Your Vet</h3>
+                <p class="text-gray-600">Select from our available licensed veterinarians based on specialty and availability</p>
+            </div>
+            <div class="text-center">
+                <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-2xl font-bold text-orange-600">2</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Make Payment</h3>
+                <p class="text-gray-600">Pay a one-time consultation fee securely through our platform</p>
+            </div>
+            <div class="text-center">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-2xl font-bold text-green-600">3</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Start Consultation</h3>
+                <p class="text-gray-600">Connect instantly via video call, chat, or phone with your chosen veterinarian</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Available Vets -->
+<section class="w-full py-12 bg-gray-50">
+    <div class="container px-4 md:px-6 mx-auto max-w-7xl">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Available Veterinarians</h2>
+            <p class="text-gray-600">Choose from our licensed veterinary professionals</p>
+        </div>
+        
+        <div class="grid lg:grid-cols-2 gap-6">
+            <?php foreach($vets as $vet): ?>
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="relative">
+                            <img 
+                                src="<?php echo $vet['image']; ?>" 
+                                alt="<?php echo $vet['name']; ?>"
+                                class="w-20 h-20 rounded-full object-cover"
+                            />
+                            <div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full border-2 border-white
+                                <?php echo $vet['status'] === 'online' ? 'bg-green-500' : ($vet['status'] === 'busy' ? 'bg-yellow-500' : 'bg-gray-400'); ?>">
+                            </div>
+                        </div>
+                        
+                        <div class="flex-1">
+                            <div class="flex items-start justify-between">
+                                <div>
+                                    <h3 class="text-xl font-semibold text-gray-900"><?php echo $vet['name']; ?></h3>
+                                    <p class="text-gray-600 font-medium"><?php echo $vet['specialty']; ?></p>
+                                    <p class="text-sm text-gray-500"><?php echo $vet['experience']; ?> experience</p>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-2xl font-bold text-gray-900">$<?php echo $vet['price']; ?></div>
+                                    <div class="text-sm text-gray-500">consultation</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4 mt-3">
+                                <div class="flex items-center space-x-1">
+                                    <?php for($i = 1; $i <= 5; $i++): ?>
+                                        <i data-lucide="star" class="w-4 h-4 <?php echo $i <= floor($vet['rating']) ? 'fill-yellow-400 text-yellow-400' : 'text-gray-300'; ?>"></i>
+                                    <?php endfor; ?>
+                                    <span class="text-sm text-gray-600"><?php echo $vet['rating']; ?> (<?php echo $vet['reviews']; ?> reviews)</span>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-3">
+                                <div class="flex items-center space-x-2 mb-2">
+                                    <i data-lucide="clock" class="w-4 h-4 text-gray-500"></i>
+                                    <span class="text-sm font-medium <?php echo $vet['status'] === 'online' ? 'text-green-600' : 'text-orange-600'; ?>">
+                                        <?php echo $vet['availability']; ?>
+                                    </span>
+                                </div>
+                                
+                                <div class="flex flex-wrap gap-1 mb-3">
+                                    <?php foreach($vet['specialties'] as $specialty): ?>
+                                        <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full"><?php echo $specialty; ?></span>
+                                    <?php endforeach; ?>
+                                </div>
+                                
+                                <div class="flex items-center space-x-2 mb-4">
+                                    <i data-lucide="globe" class="w-4 h-4 text-gray-500"></i>
+                                    <span class="text-sm text-gray-600"><?php echo implode(', ', $vet['languages']); ?></span>
+                                </div>
+                            </div>
+                            
+                            <button 
+                                onclick="selectVet(<?php echo $vet['id']; ?>)"
+                                class="w-full bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md font-medium transition-colors
+                                    <?php echo $vet['status'] !== 'online' ? 'opacity-75' : ''; ?>"
+                                <?php echo $vet['status'] !== 'online' ? 'disabled' : ''; ?>
+                            >
+                                <?php if($vet['status'] === 'online'): ?>
+                                    <i data-lucide="video" class="w-4 h-4 inline mr-2"></i>
+                                    Consult Now - $<?php echo $vet['price']; ?>
+                                <?php else: ?>
+                                    <i data-lucide="clock" class="w-4 h-4 inline mr-2"></i>
+                                    Join Waitlist
+                                <?php endif; ?>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+
+<!-- Emergency Notice -->
+<section class="w-full py-8 bg-red-600 text-white">
+    <div class="container px-4 md:px-6 mx-auto max-w-7xl">
+        <div class="text-center">
+            <h3 class="text-2xl font-bold mb-2">🚨 Life-Threatening Emergency?</h3>
+            <p class="text-red-100 mb-4">If your cat is experiencing a life-threatening emergency, please contact your nearest emergency veterinary clinic immediately or call:</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-6">
+                <a href="tel:1-800-VET-HELP" class="bg-white text-red-600 px-6 py-3 rounded-lg font-bold hover:bg-red-50 transition-colors">
+                    📞 1-800-VET-HELP
+                </a>
+                <a href="tel:911" class="bg-red-800 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-900 transition-colors">
+                    🚑 Emergency Services: 911
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Payment Modal -->
+<div id="payment-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 hidden">
+    <div class="bg-white rounded-lg max-w-md w-full p-6">
+        <div class="flex items-center justify-between mb-4">
+            <h3 class="text-xl font-semibold">Consultation Payment</h3>
+            <button id="close-payment-modal" class="text-gray-500 hover:text-gray-700">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+        </div>
+        
+        <div id="selected-vet-info" class="mb-6">
+            <!-- Vet info will be populated by JavaScript -->
+        </div>
+        
+        <form id="payment-form" method="POST" action="process-vet-payment.php">
+            <input type="hidden" id="selected-vet-id" name="vet_id" />
+            
+            <div class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Card Number</label>
+                    <input type="text" placeholder="1234 5678 9012 3456" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-red-500" required />
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Expiry</label>
+                        <input type="text" placeholder="MM/YY" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-red-500" required />
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">CVV</label>
+                        <input type="text" placeholder="123" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-red-500" required />
+                    </div>
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Cardholder Name</label>
+                    <input type="text" placeholder="John Doe" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-red-500" required />
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                    <input type="email" placeholder="your@email.com" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-red-500" required />
+                </div>
+            </div>
+            
+            <div class="mt-6 pt-4 border-t border-gray-200">
+                <div class="flex justify-between items-center mb-4">
+                    <span class="text-lg font-medium">Total:</span>
+                    <span id="total-amount" class="text-2xl font-bold text-red-600">$0</span>
+                </div>
+                
+                <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white px-4 py-3 rounded-md font-medium transition-colors">
+                    <i data-lucide="credit-card" class="w-4 h-4 inline mr-2"></i>
+                    Pay & Start Consultation
+                </button>
+            </div>
+        </form>
+        
+        <p class="text-xs text-gray-500 mt-4 text-center">
+            🔒 Your payment information is secure and encrypted. One-time consultation fee.
+        </p>
+    </div>
+</div>
+
+<script>
+// Vet data for JavaScript
+const vetsData = <?php echo json_encode($vets); ?>;
+
+function selectVet(vetId) {
+    const vet = vetsData.find(v => v.id === vetId);
+    if (!vet) return;
+    
+    // Populate modal with vet info
+    document.getElementById('selected-vet-info').innerHTML = `
+        <div class="flex items-center space-x-3 p-4 bg-gray-50 rounded-lg">
+            <img src="${vet.image}" alt="${vet.name}" class="w-12 h-12 rounded-full" />
+            <div>
+                <h4 class="font-semibold">${vet.name}</h4>
+                <p class="text-sm text-gray-600">${vet.specialty}</p>
+                <p class="text-sm text-green-600">${vet.availability}</p>
+            </div>
+        </div>
+    `;
+    
+    document.getElementById('selected-vet-id').value = vetId;
+    document.getElementById('total-amount').textContent = `$${vet.price}`;
+    document.getElementById('payment-modal').classList.remove('hidden');
+}
+
+document.getElementById('close-payment-modal').addEventListener('click', function() {
+    document.getElementById('payment-modal').classList.add('hidden');
+});
+
+// Close modal on background click
+document.getElementById('payment-modal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        this.classList.add('hidden');
+    }
+});
+</script>
