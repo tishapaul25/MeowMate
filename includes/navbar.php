@@ -99,14 +99,16 @@
       <input type="password" name="confirm_password" placeholder="Confirm Password" required class="w-full border px-3 py-2 rounded-md" />
       <select name="role" required class="w-full border px-3 py-2 rounded-md">
         <option value="">-- Select Role --</option>
-        <option value="owner">Cat Owner</option>
-        <option value="hostel">Hostel Service Provider</option>
-        <option value="vet">Veterinarian</option>
+        <option value="1">Cat Owner</option>
+        <option value="2">Hostel Service Provider</option>
+        <option value="3">Veterinarian</option>
       </select>
       <button type="submit" name="sign_up_btn" class="w-full bg-green-600 text-white font-semibold py-2 rounded-md hover:bg-green-700 transition">Create Account</button>
     </form>
   </div>
 </div>
+
+
 
 <!-- Sign In Modal -->
 <div id="signinModal" class="fixed inset-0 z-50 bg-black bg-opacity-50 hidden justify-center items-center">
@@ -119,7 +121,7 @@
       <form method="POST" action="process-signin.php" class="space-y-4">
         <input type="text" name="username" placeholder="Username" required class="w-full border px-3 py-2 rounded-md" />
         <input type="password" name="password" placeholder="Password" required class="w-full border px-3 py-2 rounded-md" />
-        <button type="submit" class="w-full bg-green-600 text-white font-semibold py-2 rounded-md hover:bg-green-700 transition">
+        <button type="submit" name="signin_btn" class="w-full bg-green-600 text-white font-semibold py-2 rounded-md hover:bg-green-700 transition">
           Sign In
         </button>
       </form>
