@@ -85,11 +85,13 @@
   <div class="bg-white p-6 rounded-lg w-full max-w-md relative shadow-lg">
     <button class="absolute top-2 right-3 text-gray-500 hover:text-red-500 text-xl font-bold" onclick="closeModal()">&times;</button>
     <h2 class="text-xl font-semibold mb-4 text-center text-green-700">Create Your Account</h2>
+
+
     
     <form method="POST" action="process-signup.php" id="signupForm" class="space-y-3">
       <input type="text" name="first_name" placeholder="First Name" required class="w-full border px-3 py-2 rounded-md" />
       <input type="text" name="last_name" placeholder="Last Name" required class="w-full border px-3 py-2 rounded-md" />
-      <input type="email" name="email" placeholder="Email" required class="w-full border px-3 py-2 rounded-md" />
+      <input type="text" name="email" placeholder="Email" required class="w-full border px-3 py-2 rounded-md" />
       <input type="text" name="phone" placeholder="Phone" required class="w-full border px-3 py-2 rounded-md" />
       <input type="text" name="address" placeholder="Address" required class="w-full border px-3 py-2 rounded-md" />
       <input type="text" name="username" placeholder="Username" required class="w-full border px-3 py-2 rounded-md" />
@@ -101,7 +103,7 @@
         <option value="hostel">Hostel Service Provider</option>
         <option value="vet">Veterinarian</option>
       </select>
-      <button type="submit" class="w-full bg-green-600 text-white font-semibold py-2 rounded-md hover:bg-green-700 transition">Create Account</button>
+      <button type="submit" name="sign_up_btn" class="w-full bg-green-600 text-white font-semibold py-2 rounded-md hover:bg-green-700 transition">Create Account</button>
     </form>
   </div>
 </div>
