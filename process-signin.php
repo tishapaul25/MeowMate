@@ -17,13 +17,14 @@
         if($user['role'] == 1){
           // cat owner
           header("location: index.php");
+
         }else if($user['role']==2){
           // hostel provider
-          header("location: index.php");
+          header("location: provider.php");
 
         }else if($user['role'] == 3){
-          // e
-          header("location: index.php");
+          // vet
+          header("location: vet.php");
         }
 
      }

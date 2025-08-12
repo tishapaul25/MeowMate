@@ -11,12 +11,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $confirm = $_POST['confirm_password'];
     $role = $_POST['role'];
 
-    $status = '0';
-    if($role == '1' || $role == '2'){
+   $status = '0';
+   if($role == '1'){
+       $status = '1';
+    }else if($role == '2'){
         $status = '1';
-    }elseif ($role == '3'){
-        $status = '0';
     }
+    else if ($role == '3'){
+       $status = '0';
+    }//
+//    $status = if($role === 1 || $role === 2) ? 1 : 0;
     // Validation: Check if passwords match
     if ($password == $confirm) {
           $result = $conn->query("SELECT * FROM users WHERE username = '$username'");
